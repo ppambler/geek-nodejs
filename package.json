@@ -1,5 +1,14 @@
 {
+  "scripts": {
+    "start": "NODE_PATH=node node index.js",
+    "dev": "webpack --devtool none --mode development --target node"
+  },
   "dependencies": {
-    "@types/node": "^12.7.11"
+    "@types/node": "^12.7.11",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
