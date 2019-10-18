@@ -50,6 +50,7 @@ interview((err, res) => {
 //   console.log('cry', e)
 // }
 function interview(callback) {
+
   setTimeout(() => {
     if (Math.random() < 0.5) {
       callback(null, 'success')
@@ -57,4 +58,5 @@ function interview(callback) {
       callback(new Error('fail'))
     }
   }, 500)
+
 }
