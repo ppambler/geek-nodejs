@@ -1,17 +1,15 @@
 (function () {
   const promise = new Promise((resolve, reject) => {
-    console.log(1)
     setTimeout(() => {
-      reject(new Error('hi'))
-      console.log(5)
-    }, 500)
-    console.log(2)
+      reject(new Error('3'))
+    }, 300)
+  }).then((res) => {
+    console.log(res)
+  }).catch((err) => {
+    console.log(err)
   })
-  console.log(3)
   console.log(promise)
   setTimeout(() => {
     console.log(promise)
-    console.log(6)
   }, 800)
-  console.log(4)
 })()
